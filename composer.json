@@ -1,5 +1,5 @@
 {
-    "name": "zenstruck/migrations-bundle",
+    "name": "smartteam/migrations-bundle",
     "description": "Wrapper for DoctrineMigrationsBundle that enables container aware migrations",
     "keywords": ["Migrations"],
     "homepage": "http://zenstruck.com/project/ZenstruckMigrationsBundle",
@@ -19,7 +19,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.x-dev"
+            "dev-master": "master"
         }
     },
     "target-dir": "Zenstruck/Bundle/MigrationsBundle"
