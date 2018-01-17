@@ -1,6 +1,6 @@
 {
     "name": "smartteam/migrations-bundle",
-    "description": "Wrapper for DoctrineMigrationsBundle that enables container aware migrations",
+    "description": "Mantainance project of old ZenstruckMigrationsBundle",
     "keywords": ["Migrations"],
     "homepage": "http://zenstruck.com/project/ZenstruckMigrationsBundle",
     "type": "symfony-bundle",
@@ -9,6 +9,10 @@
         {
             "name": "Kevin Bond",
             "email": "kevinbond@gmail.com"
+        },
+        {
+            "name": "Gabriele Santini",
+            "email": "gsantini@smart-team.tn"
         }
     ],
     "require": {
