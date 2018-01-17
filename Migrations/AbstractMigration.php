@@ -1,6 +1,6 @@
 <?php
 
-namespace Zenstruck\Bundle\MigrationsBundle\Migrations;
+namespace SmartTeam\Bundle\MigrationsBundle\Migrations;
 
 use Doctrine\DBAL\Migrations\AbstractMigration as BaseAbstractMigration;
 use Symfony\Component\DependencyInjection\ContainerInterface;

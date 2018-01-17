@@ -1,6 +1,6 @@
 <?php
 
-namespace Zenstruck\Bundle\MigrationsBundle\Command;
+namespace SmartTeam\Bundle\MigrationsBundle\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Doctrine\Bundle\DoctrineBundle\Command\Proxy\DoctrineCommandHelper;
 use Doctrine\Bundle\MigrationsBundle\Command\DoctrineCommand;
 use Doctrine\DBAL\Migrations\Tools\Console\Command\MigrateCommand as BaseMigrateCommand;
-use Zenstruck\Bundle\MigrationsBundle\Migrations\AbstractMigration;
+use SmartTeam\Bundle\MigrationsBundle\Migrations\AbstractMigration;
 
 /**
  * @author Kevin Bond <kevinbond@gmail.com>
@@ -20,7 +20,7 @@ class MigrateCommand extends BaseMigrateCommand
         parent::configure();
 
         $this
-            ->setName('zenstruck:migrations:migrate')
+            ->setName('smartteam:migrations:migrate')
             ->addOption('em', null, InputOption::VALUE_OPTIONAL, 'The entity manager to use for this command.')
         ;
     }

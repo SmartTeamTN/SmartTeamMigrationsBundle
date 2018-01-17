@@ -1,9 +1,6 @@
-# ZenstruckMigrationsBundle
+# SmartTeamMigrationsBundle
 
-**NOTE:** [DoctrineMigrationsBundle](https://github.com/doctrine/DoctrineMigrationsBundle) now
-[supports ContainerAware migrations](https://github.com/doctrine/DoctrineMigrationsBundle/pull/28)
-
-Wrapper for DoctrineMigrationsBundle that enables container aware migrations.
+Mantainance project of old ZenstruckMigrationsBundle that enabled container aware migrations.
 
 **NOTE:** For use with `Symfony 2.0` use the `1.x` branch
 
@@ -13,7 +10,7 @@ Wrapper for DoctrineMigrationsBundle that enables container aware migrations.
 
     ```json
     "require" :  {
-        "zenstruck/migrations-bundle": "*",
+        "smartteam/migrations-bundle": "*",
     }
     ```
 
@@ -27,7 +24,7 @@ Wrapper for DoctrineMigrationsBundle that enables container aware migrations.
     {
         $bundles = array(
             // ...
-            new Zenstruck\Bundle\MigrationsBundle\ZenstruckMigrationsBundle(),
+            new SmartTeam\Bundle\MigrationsBundle\SmartTeamMigrationsBundle(),
         );
         // ...
     )
@@ -36,14 +33,14 @@ Wrapper for DoctrineMigrationsBundle that enables container aware migrations.
 ## Usage
 
 *   To make use of container aware data migrations your migrations must extend 
-    `Zenstruck\Bundle\MigrationsBundle\Migrations\AbstractMigration`.  (**note:** Migrations that extend
+    `SmartTeam\Bundle\MigrationsBundle\Migrations\AbstractMigration`.  (**note:** Migrations that extend
     `Doctrine\DBAL\Migrations\AbstractMigration` will still run normally)
 *   Implement the `dataUp()` method and add your custom migration logic. (**note:** The `up()` method will be run 
     before `dataUp`)
 *   Implement the `dataDown()` method and add your custom migration logic. (**note:** The `down()` method will be run 
     before `dataDown`)
 *   _Optionally_ implement the `getDataDescription` method and return a description of the migration.
-*   Migrate using the `zenstruck:migrations:migrate` command.
+*   Migrate using the `SmartTeam:migrations:migrate` command.
     (**note:** make sure you run migrations with this command and not `doctrine:migrations:migrate`
 
 ## Migration Template
@@ -53,7 +50,7 @@ Wrapper for DoctrineMigrationsBundle that enables container aware migrations.
 
 namespace Application\Migrations;
 
-use Zenstruck\Bundle\MigrationsBundle\Migrations\AbstractMigration;
+use SmartTeam\Bundle\MigrationsBundle\Migrations\AbstractMigration;
 use Doctrine\DBAL\Schema\Schema;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

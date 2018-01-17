@@ -19,12 +19,12 @@
         "doctrine/doctrine-migrations-bundle": "*"
     },
     "autoload": {
-        "psr-0": { "Zenstruck\\Bundle\\MigrationsBundle": "" }
+        "psr-0": { "SmartTeam\\Bundle\\MigrationsBundle": "" }
     },
     "extra": {
         "branch-alias": {
             "dev-master": "2.x-dev"
         }
     },
-    "target-dir": "Zenstruck/Bundle/MigrationsBundle"
+    "target-dir": "SmartTeam/Bundle/MigrationsBundle"
 }
