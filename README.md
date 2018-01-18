@@ -40,7 +40,7 @@ Mantainance project of old ZenstruckMigrationsBundle that enabled container awar
 *   Implement the `dataDown()` method and add your custom migration logic. (**note:** The `down()` method will be run 
     before `dataDown`)
 *   _Optionally_ implement the `getDataDescription` method and return a description of the migration.
-*   Migrate using the `SmartTeam:migrations:migrate` command.
+*   Migrate using the `smartteam:migrations:migrate` command.
     (**note:** make sure you run migrations with this command and not `doctrine:migrations:migrate`
 
 ## Migration Template
